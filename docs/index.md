@@ -21,5 +21,5 @@ The code accompanying the paper compares GOALIVE against baselines such as Deep 
 ## Resources
 
 - [Paper (PDF)](https://raw.githubusercontent.com/mlresearch/v235/main/assets/zheng24a/zheng24a.pdf)
-- [Code repository](https://github.com/SiruiZheng/goalive-rebuttal/tree/master/goalive)
+- [Code repository](https://github.com/SiruiZheng/GOALIVE)
 - [Proceedings page](https://proceedings.mlr.press/v235/zheng24a.html)
