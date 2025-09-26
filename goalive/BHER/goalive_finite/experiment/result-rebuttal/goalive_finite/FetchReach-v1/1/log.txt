@@ -1,0 +1,74 @@
+Logging to goalive-icml/BHER/goalive_finite/experiment/result-rebuttal/goalive_finite/FetchReach-v1/1
+T: 50
+_Q_lr: 0.001
+_action_l2: 1.0
+_batch_size: 256
+_buffer_size: 1000000
+_clip_obs: 200.0
+_hidden: 256
+_layers: 3
+_max_u: 1.0
+_network_class: BHER.goalive_finite.actor_critic:ActorCritic
+_norm_clip: 5
+_norm_eps: 0.01
+_pi_lr: 0.001
+_polyak: 0.95
+_relative_goals: False
+_scope: ddpg
+ddpg_params: {'buffer_size': 1000000, 'hidden': 256, 'layers': 3, 'network_class': 'BHER.goalive_finite.actor_critic:ActorCritic', 'polyak': 0.95, 'batch_size': 256, 'Q_lr': 0.001, 'pi_lr': 0.001, 'norm_eps': 0.01, 'norm_clip': 5, 'max_u': 1.0, 'action_l2': 1.0, 'clip_obs': 200.0, 'scope': 'ddpg', 'relative_goals': False}
+env_name: FetchReach-v1
+gamma: 0.98
+make_env: <function prepare_params.<locals>.make_env at 0x7efbc5bb2440>
+n_batches: 40
+n_cycles: 50
+n_test_rollouts: 10
+noise_eps: 0.2
+random_eps: 0.3
+replay_k: 4
+replay_strategy: future
+rollout_batch_size: 2
+test_with_polyak: False
+Creating a DDPG agent with action space 4 x 1.0...
+Training...
+---------------------------------------
+| epoch              | 0              |
+| stats_g/mean       | 0.86613446     |
+| stats_g/std        | 0.089747585    |
+| stats_o/mean       | 0.26011407     |
+| stats_o/std        | 0.029217865    |
+| test/episode       | 20.0           |
+| test/mean_Q        | -1.1897442     |
+| test/success_rate  | 0.6            |
+| time               | 0:00:37.529522 |
+| train/episode      | 100.0          |
+| train/success_rate | 0.42           |
+---------------------------------------
+New best success rate: 0.6. Saving policy to goalive-icml/BHER/goalive_finite/experiment/result-rebuttal/goalive_finite/FetchReach-v1/1/policy_best.pkl ...
+Saving periodic policy to goalive-icml/BHER/goalive_finite/experiment/result-rebuttal/goalive_finite/FetchReach-v1/1/policy_0.pkl ...
+---------------------------------------
+| epoch              | 1              |
+| stats_g/mean       | 0.8743808      |
+| stats_g/std        | 0.09076866     |
+| stats_o/mean       | 0.26248685     |
+| stats_o/std        | 0.03100722     |
+| test/episode       | 40.0           |
+| test/mean_Q        | -0.1957807     |
+| test/success_rate  | 1.0            |
+| time               | 0:01:19.080352 |
+| train/episode      | 200.0          |
+| train/success_rate | 0.76           |
+---------------------------------------
+New best success rate: 1.0. Saving policy to goalive-icml/BHER/goalive_finite/experiment/result-rebuttal/goalive_finite/FetchReach-v1/1/policy_best.pkl ...
+---------------------------------------
+| epoch              | 2              |
+| stats_g/mean       | 0.8751626      |
+| stats_g/std        | 0.08943391     |
+| stats_o/mean       | 0.26267537     |
+| stats_o/std        | 0.031020965    |
+| test/episode       | 60.0           |
+| test/mean_Q        | -0.122865126   |
+| test/success_rate  | 1.0            |
+| time               | 0:02:01.806976 |
+| train/episode      | 300.0          |
+| train/success_rate | 0.78           |
+---------------------------------------
